@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('/styles/header.css');
+@import url('/styles/main.css');
 
 :root {
     --fonte: 'Poppins';
@@ -16,12 +17,40 @@
     --fonte-weigth-regular: 300;
 
     --fonte-size-h1: 56px;
-    --fonte-size-h2: 50px;
+    --fonte-size-h2: 44px;
     --fonte-sub-titulo: 30px;
-    --fonte-paragrafo: 26px;
-    --fonte-small: 20px;
-    --fonte-ancora: 18px
+    --fonte-paragrafo: 20px;
+    --fonte-small: 16px;
+    --fonte-ancora: 16px;
 
+    --icone-size: 48px;
+
+}
+
+@media (max-width: 1024px) {
+    :root {
+        --fonte-size-h1-tablet: 44px;
+        --fonte-size-h2-tablet: 36px;
+        --fonte-sub-titulo-tablet: 24px;
+        --fonte-paragrafo-tablet: 18px;
+        --fonte-small-tablet: 14px;
+        --fonte-ancora-tablet: 14px;
+
+        --icone-size-tablet: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --fonte-size-h1-mobile: 32px;
+        --fonte-size-h2-mobile: 28px;
+        --fonte-sub-titulo-mobile: 20px;
+        --fonte-paragrafo-mobile: 16px;
+        --fonte-small-mobile: 14px;
+        --fonte-ancora-mobile: 14px;
+
+        --icone-size-mobile: 28px;
+    }
 }
 
 body {
