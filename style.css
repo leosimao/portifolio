@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('/styles/header.css');
-@import url('/styles/main.css');
+@import url('/styles/apresentacao.css');
+@import url('/styles/tecnologias.css');
 
 :root {
     --fonte: 'Poppins';
@@ -9,6 +10,7 @@
     --cor-branca: #FFF;
     --cor-preta: #000;
     --hover: #60A5FA;
+    --cor-texto-paragrafo: #A4A4A4;
 
 
     --border-radius: 4px;
@@ -27,20 +29,7 @@
 
 }
 
-@media (max-width: 1024px) {
-    :root {
-        --fonte-size-h1-tablet: 44px;
-        --fonte-size-h2-tablet: 36px;
-        --fonte-sub-titulo-tablet: 24px;
-        --fonte-paragrafo-tablet: 18px;
-        --fonte-small-tablet: 14px;
-        --fonte-ancora-tablet: 14px;
-
-        --icone-size-tablet: 36px;
-    }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     :root {
         --fonte-size-h1-mobile: 32px;
         --fonte-size-h2-mobile: 28px;
@@ -50,6 +39,19 @@
         --fonte-ancora-mobile: 14px;
 
         --icone-size-mobile: 28px;
+    }
+}
+
+@media (max-width: 1025px) {
+    :root {
+        --fonte-size-h1-tablet: 44px;
+        --fonte-size-h2-tablet: 36px;
+        --fonte-sub-titulo-tablet: 24px;
+        --fonte-paragrafo-tablet: 18px;
+        --fonte-small-tablet: 14px;
+        --fonte-ancora-tablet: 14px;
+
+        --icone-size-tablet: 36px;
     }
 }
 

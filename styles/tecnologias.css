@@ -1,0 +1,105 @@
+#main__tecnologias {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 12.5rem
+}
+
+.main__tecnologias__sub-titulo {
+    font-size: var(--fonte-sub-titulo-mobile);
+    font-weight: var(--fonte-weigth-semi-bold);
+    color: var(--cor-branca);
+    text-align: center;
+}
+
+.main__tecnologias__apresentacao__habilidades {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main__tecnologias__apresentacao {
+    display: flex;
+    flex-direction: column;
+    gap: 3.75rem;
+}
+
+.main__tecnologias__apresentacao-tecnologias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: var(--cor-branca);
+}
+
+.main__tecnologias__apresentacao-tecnologias__titulo {
+    font-size: var(--fonte-sub-titulo-mobile);
+}
+
+.main__tecnologias__apresentacao-tecnologias__descricao {
+    text-align: justify;
+}
+
+.main__tecnologias__tecnologias__lista-tecnologias {
+    display: flex;
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.main__tecnologias__tecnologias__lista-tecnologias__item img {
+    width: 60px;
+    height: auto;
+}
+
+.main__tecnologias__apresentacao__ancora-projetos {
+    align-self: flex-start;
+    color: var(--cor-secundaria);
+}
+
+.main__tecnologias__apresentacao__linha-producao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.main__tecnologias__apresentacao__linhas-producao__titulo {
+    color: var(--cor-branca);
+}
+
+.main__tecnologias__apresentacao__linha-producao__lista-producao {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.main__tecnologias__apresentacao__linha-producao__lista-producao::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: var(--cor-branca);
+    z-index: 0;
+}
+
+.main__tecnologias__apresentacao__linha-producao__lista-producao__item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--cor-branca);
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.main__tecnologias__apresentacao__linha-producao__lista-producao__item img {
+    width: 60px;
+    height: auto;
+}

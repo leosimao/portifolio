@@ -12,11 +12,10 @@ header {
     justify-content: center;
 }
 
-.header__conteudo-principal__titulo__destaque {
+.span__titulo-destaque {
     color: var(--cor-secundaria);
 }
 
-/* === BASE (MOBILE) === */
 .header__conteudo-principal {
     flex: 1;
     display: flex;
@@ -28,7 +27,7 @@ header {
 }
 
 .header__conteudo-principal__titulo {
-    font-size: var(--fonte-size-h2-tablet);
+    font-size: var(--fonte-size-h2-mobile);
     font-weight: var(--fonte-weigth-semi-bold);
     text-align: center;
     color: var(--cor-branca);

@@ -6,14 +6,13 @@
     <title>Dev. FullStack | Leonardo Simão</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <header>
         <div class="header__conteudo-principal">
             <h2 class="header__conteudo-principal__titulo">
                 Olá! Sou o Leonardo Simão <br>
-                Seu <span class="header__conteudo-principal__titulo__destaque">Engenheiro de Software</span>!
+                Seu <span class="span__titulo-destaque">Engenheiro de Software</span>!
             </h2>
             <ul class="header__conteudo-principal__lista-redes-sociais">
                 <li>
@@ -27,27 +26,128 @@
                 </li>
             </ul>
         </div>
-        <a class="header__ancora-veja-mais" href="">
+        <a class="header__ancora-veja-mais" href="#main__apresentacao">
             Clique e inove!
             <img src="./assets/veja-mais.svg" alt="Veja mais icon">
         </a>
     </header>
     <main>
-        <img class="main__foto-portifolio" src="./assets/foto-portifolio.svg" alt="Foto Portifolio">
-        <div>
-            <h2>Construindo soluções que irão levar o<span> seu <br>
+        <section id="main__apresentacao" class="main__conteudo-principal">
+            <img class="main__foto-portifolio" src="./assets/foto-800.svg"
+                 srcset="assets/foto-400.svg 400w, assets/foto-800.svg 800w, assets/foto-800.svg 1200w"
+                 alt="Foto Portifolio">
+            <div class="main__texto-principal">
+                <h2 class="main__texto-principal__sub-titulo">Construindo soluções que irão levar o<span class="span__titulo-destaque"> seu <br>
                 negócio em outro nível</span>!</h2>
-            <div>
-                <p>
-                    Desenvolvedor full-stack
+                <div class="main__texto-principal__descricao">
+                    <p class="main__texto-principal__descricao__titulo">
+                        Desenvolvedor full-stack
+                    </p>
+                    <p class="main__texto-principal__descricao__conteudo">
+                        Engenheiro de Software com mais de 2 anos de experiência em desenvolvimento web, atuando também na prototipação de interfaces.
+                        Tenho como principal objetivo entregar <span class="span__titulo-destaque"> soluções que gerem valor </span> real para o cliente e impulsionem os <span> resultados </span>
+                        do negócio.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="main__tecnologias">
+            <div class="main__tecnologias__apresentacao">
+                <h2 class="main__tecnologias__sub-titulo">
+                    Aplicações robustas exigem <span class="span__titulo-destaque"> ferramentas robustas </span>!
+                </h2>
+                <div class="main__tecnologias__apresentacao__habilidades">
+                    <div class="main__tecnologias__apresentacao-tecnologias">
+                        <p class="main__tecnologias__apresentacao-tecnologias__titulo">
+                            <span class="span-sublinhado">Back</span>-end
+                        </p>
+                        <p class="main__tecnologias__apresentacao-tecnologias__descricao">
+                            Essa é a base do sistema, por isso uso as ferramentas certas para garantir segurança,
+                            desempenho e confiança nos bastidores.
+                        </p>
+                        <ul class="main__tecnologias__tecnologias__lista-tecnologias">
+                            <li class="main__tecnologias__tecnologias__lista-tecnologias__item">
+                                <img src="/assets/kotlin.svg" alt="Kotlin Icon">
+                            </li>
+                            <li class="main__tecnologias__tecnologias__lista-tecnologias__item">
+                                <img src="assets/java.svg" alt="Java Icon">
+                            </li>
+                            <li class="main__tecnologias__tecnologias__lista-tecnologias__item">
+                                <img src="assets/spring.svg" alt="Spring Icon">
+                            </li>
+                            <li class="main__tecnologias__tecnologias__lista-tecnologias__item">
+                                <img src="assets/docker.svg" alt="Docker Icon">
+                            </li>
+                        </ul>
+                        <a class="main__tecnologias__apresentacao__ancora-projetos" href="">Ver projetos</a>
+                    </div>
+                    <div class="main__tecnologias__apresentacao-tecnologias">
+                        <p class="main__tecnologias__apresentacao-tecnologias__titulo">
+                            <span class="span-sublinhado">Front</span>-end
+                        </p>
+                        <p class="main__tecnologias__apresentacao-tecnologias__descricao">
+                            É aqui que seu cliente se encanta pelo seu produto o ponto de decisão e conquista.
+                            Portanto uso as ferramentas mais atuais do mercado.
+                        </p>
+                        <ul class="main__tecnologias__tecnologias__lista-tecnologias">
+                            <li class="main__tecnologias__tecnologias__lista-tecnologias__item">
+                                <img src="assets/js.svg" alt="JavaScript Icon">
+                            </li>
+                            <li class="main__tecnologias__tecnologias__lista-tecnologias__item">
+                                <img src="assets/html.svg" alt="HTML Icon">
+                            </li>
+                            <li class="main__tecnologias__tecnologias__lista-tecnologias__item">
+                                <img src="assets/css.svg" alt="CSS Icon">
+                            </li>
+                            <li class="main__tecnologias__tecnologias__lista-tecnologias__item">
+                                <img src="assets/react.svg" alt="React Icon">
+                            </li>
+                        </ul>
+                        <a  class="main__tecnologias__apresentacao__ancora-projetos" href="">Ver projetos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main__tecnologias__apresentacao__linha-producao">
+                <p class="main__tecnologias__apresentacao__linhas-producao__titulo">
+                    Passo a passo para construção de um sistema
                 </p>
+                <ul class="main__tecnologias__apresentacao__linha-producao__lista-producao">
+                    <li class="main__tecnologias__apresentacao__linha-producao__lista-producao__item">
+                        <img src="assets/idealizacao.svg" alt="Idealizacao Icon">
+                        <p class="main__tecnologias__apresentacao__linha-producao__lista-producao__etapa">
+                            Idealização
+                        </p>
+                    </li>
+                    <li class="main__tecnologias__apresentacao__linha-producao__lista-producao__item">
+                        <img src="assets/prototipacao.svg" alt="Prototipacao Icon">
+                        <p class="main__tecnologias__apresentacao__linha-producao__lista-producao__etapa">
+                            Prototipação
+                        </p>
+                    </li>
+                    <li class="main__tecnologias__apresentacao__linha-producao__lista-producao__item">
+                        <img src="assets/codificacao.svg" alt="Codificacao Icon">
+                        <p class="main__tecnologias__apresentacao__linha-producao__lista-producao__etapa">
+                            Codificação
+                        </p>
+                    </li>
+                    <li class="main__tecnologias__apresentacao__linha-producao__lista-producao__item">
+                        <img src="assets/aprovacao.svg" alt="Aprovacao Icon">
+                        <p class="main__tecnologias__apresentacao__linha-producao__lista-producao__etapa">
+                            Aprovação
+                        </p>
+                    </li>
+                    <li class="main__tecnologias__apresentacao__linha-producao__lista-producao__item">
+                        <img src="assets/web.svg" alt="Web Icon">
+                        <p class="main__tecnologias__apresentacao__linha-producao__lista-producao__etapa">
+                            Seu site no ar
+                        </p>
+                    </li>
+                </ul>
                 <p>
-                    Engenheiro de Software com mais de 2 anos de experiência em desenvolvimento web, atuando também na prototipação de interfaces.
-                    Tenho como principal objetivo entregar <span> soluções que gerem valor </span> real para o cliente e impulsionem os <span> resultados </span>
-                    do negócio.
+
                 </p>
             </div>
-        </div>
+        </section>
     </main>
     <footer></footer>
 
