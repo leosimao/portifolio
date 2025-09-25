@@ -1,5 +1,5 @@
 header {
-    width: 100%;
+    max-width: 100%;
     height: 100vh;
     background-image: linear-gradient(to bottom,
     var(--cor-preta),
@@ -23,7 +23,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 25px;
-    margin-left: 0;
+    padding-left: 0;
 }
 
 .header__conteudo-principal__titulo {
@@ -60,7 +60,7 @@ header {
 
 @media (min-width: 769px) {
     .header__conteudo-principal {
-        margin-left: 6.25rem;
+        padding-left: 6.25rem;
         align-items: flex-start;
     }
 

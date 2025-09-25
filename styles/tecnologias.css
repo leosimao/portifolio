@@ -35,6 +35,7 @@
 
 .main__tecnologias__apresentacao-tecnologias__titulo {
     font-size: var(--fonte-sub-titulo-mobile);
+    font-weight: var(--fonte-weigth-semi-bold);
 }
 
 .main__tecnologias__apresentacao-tecnologias__descricao {
@@ -70,23 +71,12 @@
 
 .main__tecnologias__apresentacao__linha-producao__lista-producao {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     align-items: center;
     list-style: none;
     position: relative;
     padding: 0;
     margin: 0;
-}
-
-.main__tecnologias__apresentacao__linha-producao__lista-producao::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background-color: var(--cor-branca);
-    z-index: 0;
 }
 
 .main__tecnologias__apresentacao__linha-producao__lista-producao__item {
@@ -102,4 +92,57 @@
 .main__tecnologias__apresentacao__linha-producao__lista-producao__item img {
     width: 60px;
     height: auto;
+}
+
+@media (min-width: 769px) {
+    .main__tecnologias__sub-titulo {
+        font-size: var(--fonte-sub-titulo-tablet);
+    }
+
+    .main__tecnologias__apresentacao-tecnologias__titulo {
+        font-size: var(--fonte-sub-titulo-tablet);
+        align-self: flex-start;
+    }
+
+    .main__tecnologias__apresentacao-tecnologias__descricao {
+        font-size: var(--fonte-paragrafo-tablet)
+    }
+
+    .main__tecnologias__apresentacao__linhas-producao__titulo {
+        font-size: var(--fonte-paragrafo-tablet);
+    }
+}
+
+@media (min-width: 1025px) {
+    .main__tecnologias__sub-titulo {
+        font-size: var(--fonte-sub-titulo);
+    }
+
+    .main__tecnologias__apresentacao-tecnologias__titulo {
+        font-size: var(--fonte-sub-titulo);
+    }
+
+    .main__tecnologias__apresentacao-tecnologias__descricao {
+        font-size: var(--fonte-paragrafo);
+        line-height: 1.2
+    }
+
+    .main__tecnologias__apresentacao__linhas-producao__titulo {
+        font-size: var(--fonte-paragrafo);
+    }
+
+    .main__tecnologias__apresentacao__habilidades {
+        flex-direction: row;
+        align-items: baseline;
+        padding: 0 10rem;
+    }
+
+    .main__tecnologias__tecnologias__lista-tecnologias__item img {
+        width: 70px;
+    }
+
+    .main__tecnologias__apresentacao__linha-producao__lista-producao__item img {
+        width: 70px;
+    }
+
 }

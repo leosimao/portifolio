@@ -2,6 +2,8 @@
 @import url('/styles/header.css');
 @import url('/styles/apresentacao.css');
 @import url('/styles/tecnologias.css');
+@import url('/styles/projetos.css');
+@import url('/styles/footer.css');
 
 :root {
     --fonte: 'Poppins';
@@ -11,6 +13,10 @@
     --cor-preta: #000;
     --hover: #60A5FA;
     --cor-texto-paragrafo: #A4A4A4;
+    --cor-background-figma: #F6B8A8;
+    --cor-background-github: #2C2C2C;
+    --cor-background-visualizacao: #1A1B26;
+    --cor-background-card: #2E2F3C;
 
 
     --border-radius: 4px;

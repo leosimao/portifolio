@@ -1,0 +1,90 @@
+#main__projetos {
+    min-height: 90vh;
+}
+
+.main__projetos__titulo {
+    color: var(--cor-branca);
+    font-size: var(--fonte-sub-titulo-mobile);
+    font-weight: var(--fonte-weigth-semi-bold);
+    text-align: center;
+}
+
+.main__projetos__lista-projetos {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+    justify-items: center;
+}
+
+.main__projetos__lista-projetos__item__card {
+    background-color: var(--cor-background-card);
+    border-radius: 13px;
+    min-height: 20.75rem;
+    max-width: 20.75rem;
+}
+
+.main__projetos__lista-projetos__item__card__banner {
+    width: 100%;
+}
+
+.main__projetos__lista-projetos__item__card__conteudo {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.25rem 1rem 1.25rem;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.main__projetos__lista-projetos__item__card__conteudo__header {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.main__projetos__lista-projetos__item__card__conteudo p {
+    color: var(--cor-branca);
+    font-size: var(--fonte-paragrafo-mobile);
+}
+
+.main__projetos__lista-projetos__item__card__conteudo__botoes__item__veja-mais {
+    color: var(--cor-branca);
+    background-color: var(--cor-secundaria);
+    border-radius: 6.25rem;
+    border: none;
+    height: 1.87rem;
+    width: 6.25rem;
+    font-weight: var(--fonte-weigth-regular);
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+@media (min-width: 769px) {
+    .main__projetos__titulo {
+        font-size: var(--fonte-sub-titulo-tablet);
+    }
+
+    .main__projetos__lista-projetos__item__card__conteudo p {
+        font-size: var(--fonte-paragrafo-tablet);
+    }
+
+    .main__projetos__lista-projetos__item__card__conteudo__botoes__item__veja-mais {
+        font-size: var(--fonte-paragrafo-tablet);
+    }
+
+    .main__projetos__lista-projetos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1025px) {
+    .main__projetos__titulo {
+        font-size: var(--fonte-sub-titulo);
+    }
+
+    .main__projetos__lista-projetos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
